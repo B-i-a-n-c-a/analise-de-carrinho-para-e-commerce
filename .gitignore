@@ -1,0 +1,15 @@
+# Configurações do VS Code 
+.vscode/
+
+# Ambiente Virtual
+venv/
+.venv/
+
+# Arquivos de Cache do Python 
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Banco de Dados 
+dados/*.db
+*.db
