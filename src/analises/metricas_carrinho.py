@@ -24,6 +24,9 @@ def categoria_frequente():
     print(f"A categoria que mais aparece nos carrinhos é {categoria_final} com {resultado_final} produtos.")
     return resultado_final
                     
+
+
+
 def marca_frequente():
     marcas = ['Marca A', 'Marca B', 'Marca C', 'Marca D']
     resultado_final = 0
@@ -40,9 +43,3 @@ def marca_frequente():
     print(f"A marca que mais aparece nos carrinhos é {marca_final} com {resultado_final} produtos.")
     return resultado_final
 
-
-
-
-    """se stmt for maior que o valor de categoria final, eu substituo o valor atual de 
-    cate_final para o valor atual de stmt
-    """

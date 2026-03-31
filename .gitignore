@@ -13,3 +13,4 @@ venv/
 # Banco de Dados 
 dados/*.db
 *.db
+

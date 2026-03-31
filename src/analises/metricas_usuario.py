@@ -18,11 +18,12 @@ def media_Idade():
         return resultado
 
 def faixa_etaria():
-    intervalos = [(20, 29), (30, 39), (40, 49), (50, 59), (60, 69), (70, 79)]
+    intervalos = [(18, 29), (30, 39), (40, 49), (50, 59), (60, 69), (70, 79)]
 
     with Session() as session:     
         for inicio, fim in intervalos:
-            stmt = select(func.count(Usuario.id_usuario)).where(or_(Usuario.idade.between(inicio, fim)))
+            stmt = select(func.count(Usuario.id_usuario)).where(or_
+            (Usuario.idade.between(inicio, fim)))
             total_faixa = session.execute(stmt).scalar()
             print(f"Faixa de idade entre [{inicio}, {fim}] possui {total_faixa} usuarios")
 
